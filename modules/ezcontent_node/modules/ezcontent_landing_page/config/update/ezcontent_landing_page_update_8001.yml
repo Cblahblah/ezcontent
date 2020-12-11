@@ -1,0 +1,16 @@
+core.entity_view_display.node.landing_page.default:
+  expected_config:
+    third_party_settings:
+      layout_builder_restrictions:
+        entity_view_mode_restriction:
+          allowed_blocks:
+            'Content fields':
+              - 'field_block:node:landing_page:uid'
+  update_actions:
+    change:
+      third_party_settings:
+        layout_builder_restrictions:
+          entity_view_mode_restriction:
+            blacklisted_blocks:
+              'Inline blocks':
+                - 'inline_block:paragraph_content'
